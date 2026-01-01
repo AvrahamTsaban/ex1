@@ -19,7 +19,7 @@ int main()
         Print “0”, if its integer representation is even.
         print “1” if its integer representation is odd. */
     printf("Please enter a character\n");
-    char inputCharacter = getchar();
+    char inputCharacter = (char)getchar();
     printf("Its numerical value is: %d\n", inputCharacter);
     printf("0 for even, 1 for odd: %d\n", inputCharacter&1);
 
@@ -77,8 +77,8 @@ int main()
     bit2 = input2 & 1;
     printf("LSBs: %d %d\n", bit1, bit2);
     // using 1<<31 to get a bit to mask the MSB
-    bit1 = input1 & (1<<31);
-    bit2 = input2 & (1<<31);
+    bit1 = input1 & (unsigned)(1<<31);
+    bit2 = input2 & (unsigned)(1<<31);
     printf("MSBs: %d %d\n", bit1>>31, bit2>>31);
 
     printf("Bye!");
