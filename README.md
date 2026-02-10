@@ -5,15 +5,17 @@ This program demonstrates fundamental bitwise operations and binary representati
 
 ## Author
 - **Name:** Avraham Tsaban
-- **ID:** 207088733
 - **Assignment:** Exercise 1
+
+## License Notice
+This repository may contain a license file. Please note that any such license applies **only to the code implementation** by Avraham Tsaban and does not apply to the exercise design, specifications, or instructions, which are entirely the creation of **Eliyahu Houri** as detailed in the assignment guidelines file (`ex1 - 2026.md`).
 
 ## Compilation
 
-The program must be compiled with the following hardened compilation flags to ensure code quality and standards compliance:
+The program should be compiled with the following command as specified in the assignment:
 
 ```bash
-gcc -lm -std=c99 -Wall -Wextra -Wpedantic -Wshadow -Wformat=2 -Wstrict-overflow=2 -Wwrite-strings -Wcast-align -Wpointer-arith -Werror -Wconversion -O2 -DNDEBUG ex1.c -o ex1.out
+gcc -std=c99 -Wall -Wextra -Werror -DNDEBUG ex1.c -o ex1.out -lm
 ```
 
 ## Running the Program
@@ -57,7 +59,7 @@ gcc -lm -std=c99 -Wall -Wextra -Wpedantic -Wshadow -Wformat=2 -Wstrict-overflow=
 
 ## Technical Constraints
 
-This program adheres to the following constraint:
+This program adheres to the following constraints:
 - **No control flow operations** (if, while, for, switch)
 - **No logical operators** (==, &&, ||, !=)
 - **Only bitwise operations** are permitted
@@ -98,5 +100,8 @@ Bye!
 ## Notes
 
 - The program uses standard C99 features
-- All compilation warnings are treated as errors (-Werror flag)
-- Optimization level O2 is applied for performance
+- For complete assignment details and specifications, refer to `ex1 - 2026.md`
+
+## Exercise Design Attribution
+
+This exercise, including all specifications, requirements, and instructions, was designed by **Eliyahu Houri** (T.A. responsible for this exercise) as detailed in the assignment guidelines file (`ex1 - 2026.md`). Any license in this repository applies only to the code implementation and not to the exercise design itself.
